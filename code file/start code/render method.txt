@@ -1,0 +1,31 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import './index.css';
+// import App from './App';
+
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+
+
+// ReactDOM.render('kay dekhana hai', 'kaha dikhana hai', 'call back function');
+
+// ! first method :- 1
+// ReactDOM.render ( <h1> lodha mujtaba react js !!</h1>, document.querySelector('#root'));
+
+// h1 is not html h1 is jsx
+
+// ! second method :- 2 this is bable method
+ ReactDOM.render(
+    React.createElement('h1',null, 'lodha mujtaba Like'),
+    document.getElementById('root'));
+
+ // ! pure javascript method 3:- 
+
+ const h1 = document.createElement('h1');
+ h1.innerHTML = 'lodha mujtaba is learn every day react js';
+ document.querySelector('#root').appendChild(h1);

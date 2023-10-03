@@ -1,0 +1,28 @@
+import React from "react";
+import Button from '@mui/material/Button';
+import { useNavigate } from "react-router-dom";
+
+const About = () => {
+
+    const home = useNavigate();
+
+    const goToHome = () => {
+
+        home('/');
+
+    };
+
+    return(
+        <>
+           
+            <section>
+                <h1 style={{fontSize :'30px', color : 'blue', textTransform : 'capitalize'}}> this is About us page.</h1>
+                <Button onClick={goToHome} variant="outline">
+                    click me 
+                </Button>
+            </section>
+        </>
+    )
+}
+
+export default About;

@@ -1,0 +1,54 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
+const img1 = 'https://picsum.photos/200/300';
+const img2 = 'https://picsum.photos/250/300';
+const img3 = 'https://picsum.photos/300/300';
+const linkden = 'https://www.linkedin.com/in/lodha-mujtaba-924989199';
+
+
+
+
+const heading = {
+
+   color : 'blue',
+   fontSize : '2rem',
+   textAlign : 'center',
+   fontWeight : '700',
+   textTransform : 'capitalize',
+   textShadow1 : '0px, 2px, 4px, gray',
+   fontFamily: '"Cormorant Garamond", serif ',
+   margin : '50px 0,'
+}
+
+const imgDiv = {
+   
+   display : 'flex',
+   justifyContent : 'center',
+   gap : '1rem',
+}
+
+const DivImgWrapper = {
+
+      width : '250px',
+      height : '300px',
+
+}
+
+ReactDOM.render(
+
+   <>
+      <h1 style= {heading}>lodha mujtaba</h1>
+
+      <div style={imgDiv}>
+
+         <img style={DivImgWrapper} src={img1} alt="randomImage" />
+         <a href={linkden} target='_muji'>
+            <img  style={DivImgWrapper} src={img2} alt="randomImag" />
+         </a>
+         <img style={DivImgWrapper} src={`${img3}`} alt="randomphoto" />
+      </div>
+   </>,
+   document.querySelector('#root')
+);

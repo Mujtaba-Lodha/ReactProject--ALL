@@ -1,0 +1,30 @@
+import React from "react";
+
+import { NavLink } from "react-router-dom";
+
+const HeaderCompo = () => {
+
+    return(
+
+        <>
+             <header>
+                <a href="#">logo</a>
+                <nav>
+                    <ul>
+                        <NavLink id="link" to="/" style={{color : 'blue', fontSize: '30px', textDecoration :'none'}}> home </NavLink>
+                        <br />
+                        <NavLink id="link" to="/about" style={{color : 'blue', fontSize: '30px', textDecoration :'none'}}>about</NavLink>
+                        <br />
+                        <NavLink id="link" to="/contact" style={{color : 'blue', fontSize: '30px', textDecoration :'none'}}>contact</NavLink>
+                        <br />
+                        {/* <NavLink id="link" to="/github" style={{color : 'blue', fontSize: '30px', textDecoration :'none'}}>Github</NavLink> */}
+                        <br />
+                    </ul>
+                </nav>
+            </header>
+
+        </>
+    )
+}
+
+export default HeaderCompo;

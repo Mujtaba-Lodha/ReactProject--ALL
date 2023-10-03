@@ -1,0 +1,33 @@
+import React from "react";
+import Button from '@mui/material/Button';
+import { useNavigate } from "react-router-dom";
+
+const Contact = () => {
+
+    const navigate = useNavigate();
+
+    const goToAbout = () => {
+
+        navigate('/about');
+    };
+
+    const goBack = () => {
+
+        navigate(-1);        
+    }
+
+    return(
+        <>
+            <section>
+                <h1 style={{fontSize :'30px', color : 'green', textTransform : 'capitalize'}}> this is contact us page.</h1>
+
+                <Button onClick={() => goToAbout()} variant="outlined">Enter </Button>
+                <br />
+                <br />
+                <Button onClick={() => goBack()} variant="outlined"> Go Back</Button>
+            </section>
+        </>
+    )
+}
+
+export default Contact;

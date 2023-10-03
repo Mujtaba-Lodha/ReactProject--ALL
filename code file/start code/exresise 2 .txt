@@ -1,0 +1,23 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const lName = 'lodha mujtaba';
+const fName = 'ahmad lodha';
+
+const curentDate = new Date().toLocaleDateString();
+const currentTime = new Date().toLocaleTimeString();
+
+ReactDOM.render(
+
+   <React.Fragment>
+
+   <h1>Hello, my name is {`${lName}`}</h1>
+   <h1>Hello, user name is {`${fName} and ${lName}`}</h1> 
+   <b>Current date is = {`${curentDate}`} </b>
+   <br/>
+   <b>{`Current Time is = ${currentTime}`} </b>
+
+   </React.Fragment>,
+
+   document.querySelector('#root')
+);

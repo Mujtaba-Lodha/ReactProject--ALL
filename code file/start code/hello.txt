@@ -1,0 +1,14 @@
+
+
+1:- agar react ma jsx use karvu hoy to react n eimport karvu jaruri chhe.
+
+2:- render :- render etle ke dekhadvu shu chhe.
+
+3:- cammand :- npm run, npm start, 
+
+4:- jsx :- javascript extension (XML).basically render na ander ko html type add kariye to te html element nahi pan tene jsx kehvay chhe. tene buble tene convert karine creactElement ma convert kare chhe. jene jsx kehvay chhe.ex index.js ma apel chhe.
+
+5:- bable :- bable is javascript compailer, je es6 code je broser ma nahi chalto tene compile kari old version es 4&5 ma convert kare chhe.
+
+6:- react dom :- react ma html ne add karvi hy to jaruri chhe ke react dom add karvu pade.
+

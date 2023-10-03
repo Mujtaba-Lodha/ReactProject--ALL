@@ -1,0 +1,17 @@
+import React, { useContext } from "react";
+import CompC from "./CompoC";
+import { FirstName, LastName } from "./App";
+
+const CompB = () => {
+
+    const fname = useContext(FirstName);
+    const lname = useContext(LastName);
+
+    return(
+        <>
+           <h1> My name is {fname}</h1>
+           <h1> My name is {lname}</h1>
+        </>
+    );
+}
+export default CompB;

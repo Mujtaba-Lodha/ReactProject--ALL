@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* background-color: #d2dbdd; */
+    font-family: 'Josefin Sans', sans-serif, Arial, 'Arial Narrow';
+}
+
+.main_div{
+
+    width: 100%;
+    height: 100vh;
+    background:#7bed9f; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    
+}
+
+.center_div{
+
+    width: 25%;
+    height: 70vh;
+    background-color: #f4f4f4;  
+    border-radius: 15px;  
+    /* background: #f9d89c; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    overflow:auto;
+    
+}
+
+h1{
+
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 50px;
+    background: transparent;
+    text-shadow:5px 5px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 64px;
+    box-sizing: border-box;
+    font-weight: 500;
+    letter-spacing: 0.02857em;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+input{
+
+    text-align: center;
+    height: 30px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;  
+    border-bottom: 2px solid #8566aa;  
+    outline: none;
+    margin-right: 20px;
+}
+
+.new_Btn {
+
+    width: 50px;
+    height: 50px;
+    background-color: #16a085 !important;
+    color: white !important;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 50% !important;
+}
+
+.new_Btn:hover {
+    background-color: white !important;
+    cursor: pointer;
+    color: green !important;
+}
+
+.MuiSvgIcon-root{
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+ol{
+    margin-top: 30px;
+
+}
+
+ol li{
+    padding-left:0px;
+     /* padding: 3px 0;  */
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    text-transform: capitalize;
+    color: #8566aa;
+    list-style: none;
+    align-items: center;
+}
+
+.todo_style {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.todo_style .delete_icon {
+
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8555aa;
+    border-radius: 50%;
+    margin: 0 15px 0 35px;
+    padding: 5px;
+    color: aliceblue;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+
+.todo_style .delete_icon:hover{
+    background-color: transparent;
+    color: crimson;
+    box-shadow: 5px 5px 15px -5px rgba(255, 0, 0, 0.5);
+}
+
+
+
+@media (max-width: 768px) {
+
+    .center_div{
+        width: 55%;
+    }
+
+    .todo_style .deletIcon {
+
+        margin: 0 15px 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .new_Btn{
+        margin-left: 5px;
+        min-height: 50px;
+        width: 50px;
+        color: #fff;
+        font-size: 30px;
+    }
+}

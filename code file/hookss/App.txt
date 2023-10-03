@@ -1,0 +1,37 @@
+import React, { useState } from "react";
+
+const App = () => {
+
+
+    const RoseAnna = '#ffc3a0';
+    const  [bg, setBg] = useState(RoseAnna);
+    const [name, setName] = useState('Click me');
+
+    const bgChange = () => {
+
+        // console.log('clicked');
+       let newBg = '#516395';
+       setBg(newBg);
+       setName('Ouch!! 🤕');
+    };
+
+    const bgBack = () => {
+
+        setBg(RoseAnna);
+        setName('Ayyo!! 😠');
+    };
+
+
+    return (
+        <>
+            <div style={{ backgroundColor: bg}}>
+                <button onMouseEnter={bgChange} onMouseLeave = {bgBack}>{name} </button>
+            </div>
+        </>
+
+
+    );
+
+}
+
+export default App;

@@ -1,0 +1,95 @@
+
+
+    1:- js code :- 
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
+let curDate = new Date();
+curDate = curDate.getHours();
+
+let greeting = '';
+
+const cssStyle = {};
+
+ if(curDate >= 1 && curDate < 12){
+
+   greeting = 'Good Morning';
+   cssStyle.color = 'Green';
+
+ }
+ else if(curDate>= 12 && curDate < 19) {
+
+   greeting = 'Good Afternoon';
+   cssStyle.color = 'Orange';
+
+ }
+ else{
+
+   greeting = 'Good Night';
+   cssStyle.color = 'Black';
+
+ }
+
+ReactDOM.render(
+
+   <>
+      <div>
+          <h1>Hello ! ,
+           <span style={cssStyle}>{greeting}</span> 
+           Mujtaba?
+          </h1>
+       </div>
+
+   </>,
+
+   document.querySelector('#root')
+);
+
+
+    2:- css code :- 
+
+ * {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+ 
+}
+
+body{
+  background-color: #b4f2e1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing:grayscale;
+
+}
+
+div{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+h1{
+  color: #fa9191;
+  background-color:blanchedalmond;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+span{
+  color: #fa9191;
+  margin: 0 10px;
+}

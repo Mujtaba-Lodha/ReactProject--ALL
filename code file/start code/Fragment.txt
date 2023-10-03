@@ -1,0 +1,22 @@
+//  2 :- FRAGMENT :- FRAGMENT BASICAAALY USE ROOT FILE MA JAYRE RENDER METHOD MA DIV  THI MULTIPLE ELEMENT ADD Kariye chhiye to root ma te div tenu wrapper tay jay chhe je apde evu joytu nahi and style karti vakahte te problem creat akri shake chhe.
+
+//* FRAGMENT ni jaga pan only code rakho to pan te Fragment kehsvahe.(< >)
+ReactDOM.render(
+
+   <React.Fragment>
+      <h1> lodha Mujtaba</h1>
+      <p>please this is render</p>
+      <b> where are you from</b>
+   </React.Fragment>,
+
+   // [
+   //    <p><b>Learn everything.</b></p>,
+   //    <address>Ilol pahadiya plot vistar</address>,
+   //    <hr></hr>,
+   //    <button>Click me</button>,
+    
+   // ],
+   
+   document.querySelector('#root')
+
+);

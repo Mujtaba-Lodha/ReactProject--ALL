@@ -1,0 +1,82 @@
+
+const Sdata = [
+
+    {
+        id : 1,
+        imgSrc : "https://i.ytimg.com/vi/nA7t3Mtp6KY/maxresdefault.jpg",
+        title : "Islamic Bayan",
+        bname : "Who is Allah",
+        link : "https://youtu.be/nA7t3Mtp6KY"
+    },
+
+    {
+        id : 2,
+        imgSrc : "https://i.ytimg.com/vi/KkgPIOXCU1I/maxresdefault.jpg",
+        title : "Islamic Bayan",
+        bname : "What is Islam",
+        link : "https://youtu.be/KkgPIOXCU1I"
+    },
+
+    {
+        id : 3,
+        imgSrc : "https://i.ytimg.com/vi/qoD_qfbVZv4/maxresdefault.jpg",
+        title : "Islamic Bayan",
+        bname :"Who is Prophet Mohammad s.a.w",
+        link : "https://youtu.be/qoD_qfbVZv4"
+    },
+
+    {
+        id : 4,
+        imgSrc : "https://i.ytimg.com/vi/UpJi5xNDrJg/maxresdefault.jpg",
+        title : "Islamic Bayan",
+        bname : "Akhlaq Kese Ho",
+        link : "https://youtu.be/UpJi5xNDrJg"
+    },
+
+    {
+        id : 5,
+        imgSrc : "https://i.ytimg.com/vi/Wub2NMPMqFg/maxresdefault.jpg",
+        title : "Islamic Bayan",
+        bname : "What is Jannat",
+        link : "https://youtu.be/edqPlFPQXGE"
+    },
+
+    {
+        id : 6,
+        imgSrc : "https://i.ytimg.com/vi/k9puFm-Ce6w/maxresdefault.jpg",
+        title : "Islamic Bayan",
+        bname : "What is jahannam",
+        link : "https://youtu.be/k9puFm-Ce6w"
+    },
+
+    {
+        id : 7,
+        imgSrc : "https://i.ytimg.com/vi/_a0F4Zs93RA/maxresdefault.jpg",
+        title : "Islamic Bayan",
+        bname : "Prayer of tahajjud",
+        link : "https://youtu.be/_a0F4Zs93RA"
+    },
+
+    {
+        id : 8,
+        imgSrc : "https://i.ytimg.com/vi/fWCgZjSc67Y/maxresdefault.jpg",
+        title : "Islamic Bayan",
+        bname : "Islamic Natt",
+        link : "https://youtu.be/fWCgZjSc67Y"
+    },
+
+    {
+        id : 9,
+        imgSrc : "https://islamicmusichub.com/wp-content/uploads/2017/08/Humood-Kun-Anta-1024x576.jpg",
+        title : "Islamic Bayan",
+        bname : "Kun Anta Natt",
+        link : " https://youtu.be/qKVW_wJs91Q"
+    },
+
+
+
+   
+
+];
+
+export default Sdata;

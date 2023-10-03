@@ -1,0 +1,32 @@
+import React from 'react';
+import ReactDOM  from 'react-dom';
+
+ReactDOM.render(
+   <React.Fragment>
+      <h1>progrming language list</h1>
+      <p>i extramely programing</p>
+      
+      <ol>
+         <li>c</li>
+         <ol>
+            <ul>
+               <li>List of Programing</li>
+            </ul>
+         </ol>
+         <li>html</li>
+         <ol>
+            <ul>
+               <li>List of books</li>
+            </ul>
+         </ol>
+         <li>css</li>
+         <li>javascript</li>
+      </ol>
+   </React.Fragment>,
+
+   document.querySelector('#root')
+);
+
+const h1 = document.createElement('h1');
+h1.innerHTML = 'lodha mujtaba learn programeing';
+document.querySelector('#root').appendChild(h1);

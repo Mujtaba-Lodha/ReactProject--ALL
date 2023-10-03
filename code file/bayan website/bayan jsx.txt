@@ -1,0 +1,20 @@
+
+import React from "react";
+import Card from "./Cards";
+import Sdata from "./Sdata";
+
+
+const Bayan = () => {
+
+    return (
+        <Card 
+           key = {Sdata[0].id}
+           imgSrc = {Sdata[0].imgSrc}
+           title = {Sdata[0].title}
+           bname = {Sdata[0].bname}
+           link = {Sdata[0].link}
+        />
+     );
+}
+
+export default Bayan;

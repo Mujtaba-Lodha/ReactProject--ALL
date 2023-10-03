@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    --webkit-font-smoothing: antialiased;
+    --moz-osx-font-smoothing:grayscale;
+    background-color: #d2dbdd;
+  }
+  
+  .heading_style {
+  
+     padding: 30px 0;
+     text-align: center;
+     font-size: 1.5rem;
+     text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+     font-weight: 500;
+     background-color: #fff;
+     /* color: #868686; */
+     letter-spacing: 2px;
+     margin-bottom: 30px;
+  
+  }
+
+  .slot_inner {
+
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .slot_inner h1 {
+    text-transform: capitalize;
+    padding: 0.3rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+  }
+
+  .slot_machine{
+
+    display:flex;
+    flex-direction: column;  
+    width: 25vw;  
+    height: 100%;
+    /* border: 1px solid #525252; */
+    line-height: 30px;
+    margin-top: 20px;
+    margin: 0px auto;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+   

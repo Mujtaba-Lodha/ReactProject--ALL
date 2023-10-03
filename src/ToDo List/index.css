@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* background-color: #d2dbdd; */
+    font-family: 'Josefin Sans', sans-serif, Arial, 'Arial Narrow';
+}
+
+.main_div{
+
+    width: 100%;
+    height: 100vh;
+    background:#527b91; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    
+}
+
+.center_div{
+
+    width: 25%;
+    height: 60vh;
+    background-color: #f4f4f4;  
+    border-radius: 15px;  
+    /* background: #f9d89c; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    overflow:auto;
+    
+}
+
+h1{
+
+    color: white;
+    background: transparent;
+    text-shadow:0 2px 2px black ;
+    background-color: #9d57ac;
+    padding: 6px 0 2px 0;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;  
+    border-bottom: 2px solid #9d57ac;  
+    outline: none;
+}
+
+button {
+
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #9d57ac;
+    color: #fff;
+    font-size: 2.3rem;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+}
+
+ol{
+    margin-top: 30px;
+
+}
+
+ol li{
+    padding-left: 0px;
+     /* padding: 3px 0;  */
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 50px;
+    display: flex;
+    text-transform: capitalize;
+    color: #9d57ac;
+    list-style: none;
+    align-items: center;
+}
+
+.todo_style{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.todo_style .fa-times {
+
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    border-radius: 50%;
+    margin: 0 15px 0 35px;
+    color: aliceblue;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.todo_style .fa-times:hover{
+    background-color: #e26b83;
+    cursor: pointer;
+}
+
+.todo_style .fa-times:hover .list_style {
+    color: crimson;
+}
+
+@media (max-width: 768px) {
+
+    .center_div{
+        width: 55%;
+    }
+
+    .todo_style .fa-times {
+
+        margin: 0 15px 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        margin-left: 5px;
+        min-height: 50px;
+        width: 50px;
+        color: #fff;
+        font-size: 30px;
+    }
+}

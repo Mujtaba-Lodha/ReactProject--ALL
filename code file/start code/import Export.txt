@@ -1,0 +1,48 @@
+
+1:- object using import :- 
+
+import React from "react";
+import ReactDOM from 'react-dom';
+import './index.css';
+import * as ques from "./App";
+
+ReactDOM.render(
+
+   <>
+      <ol>
+            <li>mujtaba</li>
+            <li>{ ques.default}</li>
+            <li>{ ques.firstName}</li>
+            <li>{ ques.myNames()}</li>
+            <li>{ ques.myFavName()}</li>
+      </ol>
+
+   </>,
+   document.querySelector('#root')
+
+);
+
+
+2:- using copy to copy :-
+
+import React from "react";
+import ReactDOM from 'react-dom';
+import './index.css';
+import name, {firstName, myNames, myFavName} from "./App";
+
+ReactDOM.render(
+
+   <>
+      <ol>
+            <li>mujtaba</li>
+            <li>{name}</li>
+            <li>{firstName}</li>
+            <li>{myNames()}</li>
+            <li>{myFavName()}</li>
+      </ol>
+
+   </>,
+   document.querySelector('#root')
+
+);
+

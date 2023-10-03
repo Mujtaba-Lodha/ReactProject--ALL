@@ -1,0 +1,56 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+header a {
+
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 15px -5px rgba(94, 74, 74, 0.5);
+}
+.active{
+    color: rgb(13, 171, 239);
+}
+
+
+
+nav ul {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#link{
+    margin-right: 10px;
+}
+
+h1{
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.MuiLoadingButton-root Button{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,70 @@
+
+1:- culculators logic :- 
+
+
+function add(a,b){
+
+    let sum = a + b;
+    return sum;
+}
+
+function sub(a,b){
+
+
+    let subtraction = a - b;
+    return subtraction;
+}
+
+function multi(a,b){
+
+    let multiplication = a * b;
+    return multiplication;
+}
+
+function div(a,b) {
+
+    let division = a / b;
+    division = division.toFixed(2);
+    return division;
+}
+
+export default add;
+export {sub, multi, div}
+
+
+2:- app.jsx code logic :- 
+
+import React from "react";
+import add,{sub,multi,div} from "./Calc";
+
+function App(){
+
+    return (
+
+     <React.Fragment>
+
+       <ul>
+         <li> sum of two no is {add(40,4) }</li>
+         <li> sub of two no is {sub(40,4) }</li>
+         <li> multi of two no is {multi(40,4) }</li>
+         <li> div of two no is {div(40,3) }</li>
+       </ul>
+     </React.Fragment>
+
+   );
+
+}
+
+export default App;
+
+
+3:- index.js code logic :- 
+
+import React from "react";
+import  ReactDOM  from "react-dom";
+import './index.css';
+import App from "./App";
+
+ReactDOM.render( <App />,
+   document.querySelector('#root')
+);

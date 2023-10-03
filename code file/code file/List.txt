@@ -1,0 +1,16 @@
+import React from "react";
+
+function List () {
+    return(
+    <ol>
+        <li> Ahmad</li>
+        <li> Adnan</li>
+        <li> Mohammad</li>
+        <li> bhandari</li>
+        <li> ahsan masu</li>
+        <li> Mujtaba</li>
+    </ol>
+   );
+}
+
+export default List;

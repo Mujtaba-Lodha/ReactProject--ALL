@@ -1,0 +1,31 @@
+import React from "react";
+import { useState } from "react";
+
+const App = () => {
+
+    const state = useState();
+
+    // derstucture in array (array ma useState use tay to teme 2 value return tay chhe (current value, upadate data(function)) = intialiaze value(data))
+
+     // useState ma value intialiaze tashe te count tashe achi agar setcount ma upadate je value hashe e count actual value mani leshe.etle agar secount function chhe etle ema count + 1 kariye to jetla vakhat click tay etla vakat value upadate tshae ane count te value ne accutal manshe.
+
+    const [Count, setCount] = useState(0);
+
+    // let Count = 1;
+
+    const IncNum = () => {
+
+        setCount(Count + 1);
+        // console.log('clicked ' +  Count++);
+    }
+
+    return(
+
+        <>
+            <h1> {Count} </h1>
+            <button onClick={IncNum}> Click me</button>
+        </>
+    );
+}
+
+export default App;

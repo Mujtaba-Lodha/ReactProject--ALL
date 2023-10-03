@@ -1,0 +1,18 @@
+import React from "react";
+import Sdata from "./Sdata";
+import Card from "./Cards";
+
+const Natt = () => {
+
+    return (
+        <Card 
+           key = {Sdata[7].id}
+           imgSrc = {Sdata[7].imgSrc}
+           title = {Sdata[7].title}
+           bname = {Sdata[ 7].bname}
+           link = {Sdata[7].link}
+        />
+     );
+}
+
+export default Natt;

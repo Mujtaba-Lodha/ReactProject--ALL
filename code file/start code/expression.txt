@@ -1,0 +1,48 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
+// using expression ke javsscript ma agar jsx na ander pan javascript ne add karvi hoy to tene ({}) curlybressis ma add karvu pade chhe.
+
+//! note :- only expression use kari shakiye not statement(if ,else, switch, others).
+
+const fullName = 'mujtaba imran lodha';
+
+ReactDOM.render(
+
+   <React.Fragment>
+
+   <h1> my name is {fullName}</h1>
+   <p>my lucky number {22 * 2}, {10/2}</p>
+   <h2>this is h2 paragraph tag {Math.random()}</h2>
+
+   </React.Fragment>,
+   document.querySelector('#root')
+);
+
+//* 2:- ES6 template lierlas in reatc js :- 
+
+const fName = 'muji';
+const lName = 'lodha';
+
+ReactDOM.render(
+
+   <>
+   <h1>My name is {fName}{lName}</h1>
+   <h2>My name is {fName + ' ' + lName}</h2>
+   <h3>{`My frist name ${fName} and my last name is  ${lName}`}</h3>
+   </>,
+   document.querySelector('#root')
+);
+
+let vName = 'adnan';
+let xName = 'lodha';
+
+ReactDOM.render(
+   <React.Fragment>
+      <h1>My name is {`${vName} and ${xName}`}</h1>
+      <h2>My first name is {vName} + ' ' + {xname}</h2>
+   </React.Fragment>,
+   document.querySelector('#root')
+);
+

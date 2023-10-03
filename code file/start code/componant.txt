@@ -1,0 +1,36 @@
+
+1:- App.jsx no code chhe :- 
+
+ import React from "react";
+import Heading from "./Heading";
+import Pra from "./Pra";
+import List from "./List";
+
+function App() {
+    return (
+       <>
+         <Heading />
+         <List />
+         <Pra />
+         <Heading />
+
+       </>
+    );
+}
+
+export default App;
+
+
+2:- index.js no code chhe :- 
+
+import React from 'react';
+import ReactDOM  from 'react-dom';
+import App from './App';
+
+ReactDOM.render(
+  
+   // this is react componant creat
+   <App />,
+
+   document.querySelector('#root')
+);

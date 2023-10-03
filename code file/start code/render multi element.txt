@@ -1,0 +1,29 @@
+
+//!  Note :- render method ma single element ne j pasana kare chhe.
+ 
+// ^ render method ma multi jsx kese use kar sakte ho. div thi pan use kari shako chho.and array banai ne pan add kari shako chho.
+
+ReactDOM.render(
+
+   // <div>
+   //    <h1> lodha Mujtaba</h1>
+   //    <p>please this is render</p>
+   //    <b> where are you from</b>
+   // </div>,
+
+   [
+      <p><b>Learn everything.</b></p>,
+      <address>Ilol pahadiya plot vistar</address>,
+      <hr></hr>,
+      <button>Click me</button>,
+    
+   ],
+   
+   document.querySelector('#root')
+
+);
+
+ // RENDER MA MULTIPLE ELEMENT ADD KARVA MATE 2 METHDOD CHH..
+      // ! ERROR :- render METHO MA SINGLE ELEMNET HOY .
+//  1:- DIV MA MUKINE
+// 2:- ARRAY MAA MUKINE 

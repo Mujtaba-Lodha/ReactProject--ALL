@@ -1,0 +1,9 @@
+import React from "react";
+
+
+const Images =  (props) => {
+
+  return <img className="card_img" src= {props.imgSrc} alt="myPics" />;
+}
+
+export default Images;

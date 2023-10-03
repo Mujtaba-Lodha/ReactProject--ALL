@@ -1,0 +1,28 @@
+import React from "react";
+import Button from '@mui/material/Button';
+import { useNavigate } from "react-router-dom";
+
+const Home = () => {
+
+    const contact = useNavigate();
+
+    const goToContact = () => {
+
+        contact('/contact');
+    }
+
+    return(
+        <>
+          
+            <section>
+                <h1 style={{fontSize :'30px', color : 'violet', textTransform : 'capitalize'}}> this is  home pages</h1>
+                <p style={{color :'red', fontSize: '30px', alignItem : 'center'}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus vero impedit ratione! Molestias optio culpa aliquid maiores ex tenetur et aperiam porro consectetur facere, repudiandae eveniet sunt impedit magni cupiditate!</p>
+
+                <Button onClick={() => goToContact()} variant="outlined">Primary</Button>
+
+            </section>
+        </>
+    )
+}
+
+export default Home;

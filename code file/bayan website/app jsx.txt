@@ -1,0 +1,73 @@
+import React from "react";
+import Card from "./Cards";
+import Sdata from "./Sdata";
+
+
+ const App = () => (
+
+   
+   <>
+       <h1 className="heading_style">Top 6 islamic bayan in your life journy </h1>
+
+       {Sdata.map((val, index) => {
+
+         console.log(index);
+            return (
+               <Card 
+               key = {val.id}
+                  imgSrc = {val.imgSrc}
+                  title = {val.title}
+                  bname = {val.bname}
+                  link = {val.link}
+               />
+            );
+       })}
+   </>
+   
+ );
+
+export default App;
+
+-------------~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      ----> for if else <-----
+
+      import React from "react";
+import Bayan from "./Bayan";
+import Natt from "./Natt";
+
+
+const FavBayan = 'youtube';
+
+// const FavB = () => {
+
+//     if(FavBayan === 'bayan'){
+
+//      return  <Bayan />;
+    
+//     }
+//     else {
+
+//      return  <Natt />;
+        
+//     }
+
+// };
+
+
+
+ const App = () => (
+
+   
+   <>
+       <h1 className="heading_style">Top 6 islamic bayan in your life journy </h1>
+
+       {/* <FavB /> */}
+       
+       {FavBayan === 'bayan' ? <Bayan /> : <Natt />}
+   </>
+   
+ );
+
+export default App;
+
